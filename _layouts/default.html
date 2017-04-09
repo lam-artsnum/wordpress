@@ -6,22 +6,18 @@
     <title>Wordpress</title>
     <meta name="description" content="Wordpress">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
 </head>
 <body>
 
    <header>
     <h1>nicolasbieva.be</h1>
-    <nav>
-        <ul>
-            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-            <li><a href="{{site.baseurl}}/works.html">Works</a></li>
-        </ul>
-    </nav>
+        {% include nav.html navClass='nav-top'%}
     </header>
 {{content}}
 
     <footer>
-      footer
+      {% include nav.html navClass='nav-bottom'%}
     </footer>
 </body>
 </html>
