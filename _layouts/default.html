@@ -11,7 +11,8 @@
 <body>
 
    <header>
-    <h1>nicolasbieva.be</h1>
+    <h1>{% if page.url == '/' %}Home{% endif %}</h1>
+     <h1>{% if page.url == '/works.html' %}Works{% endif %}</h1>
         {% include nav.html navClass='nav-top'%}
     </header>
 {{content}}
